@@ -15,10 +15,10 @@ const app = Vue.createApp({
       console.log(results);
       console.log(results);
       (this.firstName = results[0].name.first),
-        (this.lastName = "Joke"),
-        (this.email = "Same@gmail.com"),
-        (this.gender = "female"),
-        (this.picture = "https://randomuser.me/api/portraits/med/women/75.jpg");
+        (this.lastName = results[0].name.last),
+        (this.email = results[0].email),
+        (this.gender = results[0].gender),
+        (this.picture = results[0].picture.medium);
     },
   },
 });

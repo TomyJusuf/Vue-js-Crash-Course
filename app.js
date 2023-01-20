@@ -10,7 +10,11 @@ const app = Vue.createApp({
   },
   methods: {
     getUser() {
-      console.log(this.firstName);
+      (this.firstName = "Sam"),
+        (this.lastName = "Joke"),
+        (this.email = "Same@gmail.com"),
+        (this.gender = "female"),
+        (this.picture = "https://randomuser.me/api/portraits/women/2.jpg");
     },
   },
 });
